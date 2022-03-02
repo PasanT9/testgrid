@@ -132,6 +132,7 @@ Parameters:
       - CORRETTO_JDK11
       - ADOPT_OPEN_JDK11
       - OPEN_JDK11
+      - TEMURIN_OPEN_JDK8
   MavenVersion:
     Type: String
     Default: '3.3.9'
