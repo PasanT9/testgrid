@@ -314,11 +314,11 @@ Resources:
           pip install https://s3.amazonaws.com/cloudformation-examples/aws-cfn-bootstrap-latest.tar.gz
 
           setup_java_env() {
-            wget -q https://integration-testgrid-resources.s3.amazonaws.com/lib/jdk/jdk-8u251-linux-x64.tar.gz
-            mkdir -p /opt/jdk-8u251-linux && tar -xzf "jdk-8u251-linux-x64.tar.gz" -C /opt/jdk-8u251-linux --strip-component=1
+            wget -q https://integration-testgrid-resources.s3.amazonaws.com/lib/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u322b06.tar.gz
+            mkdir -p /opt/jdk-8u322b06 && tar -xzf "OpenJDK8U-jdk_x64_linux_hotspot_8u322b06.tar.gz" -C /opt/jdk-8u322b06 --strip-component=1
 
-            export JAVA_HOME=/opt/jdk-8u251-linux
-            ln -s /opt/jdk-8u251-linux/bin/java /usr/bin/java
+            export JAVA_HOME=/opt/jdk-8u322b06
+            ln -s /opt/jdk-8u322b06/bin/java /usr/bin/java
           }
 
           mkdir -p /opt/testgrid/workspace
